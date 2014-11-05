@@ -1,0 +1,5 @@
+<% @successes.each do |success| %>
+ <p><%= success.user if success.user %>: <%= success.text %> <span style="float:right;"><%= link_to 'Edit', edit_success_path(success) %> <%= link_to 'Delete', success, :confirm => 'Are you sure?',
+            :method => :delete %> </span></p>
+<% end %>
+<%= link_to 'Share a new success', new_success_path %>

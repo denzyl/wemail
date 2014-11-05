@@ -1,0 +1,14 @@
+<p>Submit a success</p>
+<%= form_for :success, url: successes_path do |f| %>
+  <p>
+    <%= f.label :user, "Whose success?" %><br>
+    <%= f.text_field :user %>
+  </p>
+  <p>
+    <%= f.label :text, "What was accomplished?" %><br>
+    <%= f.text_area :text %>
+  </p>
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>

@@ -7,8 +7,17 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <div class="frame">
+    <div class="bit-25">
+      <div class="box side">Successes</div>
+    </div>
+    <div class="bit-50">
+      <div class="box"><%= yield %></div>
+    </div>
 
-<%= yield %>
-
+    <div class="bit-25">
+      <!-- <div class="box box--new">.bit-25</div> -->
+    </div>
+  </div>
 </body>
 </html>
